@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+# Import dj-database-url at the beginning of the file.
+import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -76,8 +79,13 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'helloworld.db'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'skyach_postgres',
+        'USER': 'skyach_postgres_user',
+        'PASSWORD': '3lFICJozJDTvblykE1faN7YZOb7A2lDd',
+        'HOST': 'dpg-co6fscsf7o1s73dik2vg-a',
+        'PORT': '5432',
+        'Internal Database URL': 'postgres://skyach_postgres_user:3lFICJozJDTvblykE1faN7YZOb7A2lDd@dpg-co6fscsf7o1s73dik2vg-a/skyach_postgres'
     }
 }
 
