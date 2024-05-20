@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'skyach_postgres',
         'USER': 'skyach_postgres_user',
         'PASSWORD': '3lFICJozJDTvblykE1faN7YZOb7A2lDd',
-        'HOST': 'dpg-co6fscsf7o1s73dik2vg-a',
+        'HOST': 'dpg-co6fscsf7o1s73dik2vg-a.oregon-postgres.render.com',
         'PORT': '5432',
         'Internal Database URL': 'postgres://skyach_postgres_user:3lFICJozJDTvblykE1faN7YZOb7A2lDd@dpg-co6fscsf7o1s73dik2vg-a/skyach_postgres'
     }
